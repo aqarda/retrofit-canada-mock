@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Saira:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wp--preset--color--primary: #ea3f3f;
+  --wp--preset--color--secondary: #2e3249;
+  --wp--preset--color--tertiary: #faa627;
+  --wp--preset--color--quaternary: #ffdbb4;
+  --wp--preset--color--dark: #141410;
+  --wp--preset--color--light: #e5e1e1;
+}
+
+body {
+  color: #141410;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira', sans-serif;
+  color: #2e3249;
+}
+
+/* Exact WordPress block elements matching Retrofit Canada */
+.has-secondary-background-color {
+  background-color: #2e3249 !important;
+}
+
+.has-primary-background-color {
+  background-color: #ea3f3f !important;
+}
+
+.has-tertiary-background-color {
+  background-color: #faa627 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(46, 50, 73, 0.4);
+  border-radius: 9999px;
+}
